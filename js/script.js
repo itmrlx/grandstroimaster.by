@@ -71,3 +71,26 @@ $('.burger-menu').click(function () {
   $(this).toggleClass('active');
   $('.pro-menu').slideToggle();
 });
+
+// send forms
+function send_form (id, file, message) {
+  $('#'+id).submit(function() {
+    var str = $(this).serialize();
+    $.ajax({
+      type: 'POST',
+      url: '/mail/'+file+'.php',
+      data: str,
+      success: function(msg){
+        if(msg == 'OK'){
+          result = '<div class="form-sended">'+message+'</div>';
+          $('#'+id).html(result);
+        }else{
+          result = msg;
+          $('#'+id).html(result);
+        }
+      }
+    });
+    return false;
+  });
+}
+send_form('form-id', 'phpform', 'message');

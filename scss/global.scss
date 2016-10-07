@@ -50,3 +50,13 @@ body{
 		padding: 5px;
 	}
 }
+.page-height{
+	@media (min-width: 767px) {
+		min-height: calc(100vh - 383px);
+	}
+}
+.page-height2{
+	@media (min-width: 767px) {
+		min-height: calc(100vh - 353px);
+	}
+}
