@@ -142,7 +142,7 @@
 					}
 				}
 			}
-			@media screen and (max-width: 767px){
+			@media (max-width: 767px){
 				display: block;
 			}
 		}
@@ -153,10 +153,19 @@
 		margin: 0;
 		text-align: center;
 		font-size: 0;
+		@media (max-width: 767px){
+			display: none;
+			width: 100%;
+			float: left;
+		}
 		li{
 			display: inline-block;
 			position: relative;
 			padding-right: 1px;
+			@media (max-width: 767px){
+				display: block;
+				width: 100%;
+			}
 			&:last-child{
 				&:after{
 					display: none;
@@ -171,6 +180,9 @@
 				width: 1px;
 				height: 30px;
 				margin-top: -15px;
+				@media (max-width: 767px){
+					display: none;
+				}
 			}
 			&:hover,
 			&.current-menu-item{
@@ -187,6 +199,10 @@
 				font-size: 15px;
 				text-decoration: none;
 				transition: all .3s;
+				@media (max-width: 767px){
+					display: block;
+					width: 100%;
+				}
 			}
 		}
 	}
@@ -196,6 +212,9 @@
 .main-slider-container{
 	margin-top: 30px;
 	margin-bottom: 30px;
+	@media (max-width: 767px){
+		display: none;
+	}
 }
 .main-slider{
 	box-shadow: 0 0 5px rgba(#000,.3);
@@ -285,6 +304,13 @@
 	@media (max-width: 1199px) {
 		font-size: 15px;
 	}
+	@media (max-width: 767px){
+		text-align: center;
+		img{
+			float: none;
+			margin: 0 auto;
+		}
+	}
 	p{
 		margin-top: 5px;
 	}
@@ -297,6 +323,9 @@
 	.col-xs-4{
 		@media (max-width: 991px) {
 			width: 50%;
+		}
+		@media (max-width: 767px){
+			width: 100%;
 		}
 	}
 	.portfolio-block{
@@ -357,9 +386,15 @@
 	background: #fff;
 	border-radius: 5px;
 	padding: 20px;
+	.col-xs-6{
+		@media (max-width: 767px){
+			width: 100%;
+		}
+	}
 	.item{
 		.title{
 			font-size: 20px;
+			line-height: 22px;
 			font-weight: bold;
 			background-image: url(../img/check.png);
 			background-repeat: no-repeat;
@@ -372,6 +407,9 @@
 			font-size: 16px;
 			line-height: 18px;
 			height: 18*3px;
+			@media (max-width: 767px){
+				height: auto;
+			}
 		}
 	}
 }
@@ -486,6 +524,15 @@
 .team-container{
 	margin-top: 30px;
 	margin-bottom: 30px;
+	.col-xs-4{
+		@media (max-width: 767px){
+			width: 100%;
+			margin-bottom: 30px;
+			&:last-child{
+				margin-bottom: 0;
+			}
+		}
+	}
 	.team{
 		box-shadow: 0 0 5px rgba(#000,.3);
 		background: #fff;
@@ -514,12 +561,22 @@
 	background: #292929;
 	padding: 30px 0;
 	color: #fff;
+	.col-xs-6{
+		@media (max-width: 767px){
+			width: 100%;
+			text-align: center;
+		}
+	}
 	.title,.rec{
 		margin-bottom: 10px;
 		font-size: 18px;
 	}
 	.rec{
 		text-align: right;
+		@media (max-width: 767px){
+			text-align: center;
+			margin-top: 15px;
+		}
 	}
 	.so{
 		display: inline-block;
@@ -532,6 +589,10 @@
 		background-repeat: no-repeat;
 		border-radius: 50%;
 		transition: all .3s;
+		@media (max-width: 767px){
+			margin-left: 5px;
+			margin-right: 5px;
+		}
 		&:hover{
 			background-color: darken($brand-primary,10%);
 		}

@@ -38,6 +38,14 @@ $('.review-slider').slick({
   slidesToScroll: 1,
   autoplay: true,
   autoplaySpeed: 7000,
+  responsive: [
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 1,
+      }
+    },
+  ]
 });
 // partner slider
 $('.partner-slider').slick({
@@ -48,6 +56,14 @@ $('.partner-slider').slick({
   slidesToScroll: 1,
   autoplay: true,
   autoplaySpeed: 7000,
+  responsive: [
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 1,
+      }
+    },
+  ]
 });
 
 // burger menu
