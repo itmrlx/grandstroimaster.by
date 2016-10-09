@@ -3,10 +3,18 @@ template name: Работа
 */ ?>
 <?php get_header(); ?>
 
-	<!-- portfolio -->
 	<div class="page-height2">
-		<div class="container portfolio-container">
+
+		<div class="container about-us-container">
 			<h1 class="title-block"><span><?php the_title(); ?></span></h1>
+			<div class="about-us">
+				<?php the_content(); ?>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+	
+	<!-- portfolio -->
+		<div class="container portfolio-container">
 			<div class="row">
 				<?php $images = get_field('p_gallery'); if( $images ): ?>
 					<?php foreach( $images as $image ): ?>
@@ -19,6 +27,7 @@ template name: Работа
 				<?php endif; ?>
 			</div>
 		</div>
+
 	</div>
 
 <?php get_footer(); ?>
