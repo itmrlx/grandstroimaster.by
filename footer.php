@@ -3,7 +3,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-xs-6">
-					<div class="title">Мы в социакльных сетях</div>
+					<div class="title">Мы в социальных сетях</div>
 					<a href="https://vk.com/club129345278" class="so so1"></a>
 					<a href="https://ru-ru.facebook.com/people/Titov-Denis/100013510423851" class="so so2"></a>
 					<a href="https://ok.ru/group/55241646145553" class="so so3"></a>
